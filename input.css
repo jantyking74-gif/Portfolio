@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #09090f;
+    color: #f8fafc;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  ::selection { background: #7c3aed; color: white; }
+  :focus-visible { outline: 2px solid #a78bfa; outline-offset: 3px; }
+}
+
+@layer components {
+  .site-shell {
+    background:
+      radial-gradient(circle at 8% 9%, rgba(79, 70, 229, 0.15), transparent 24rem),
+      radial-gradient(circle at 90% 20%, rgba(147, 51, 234, 0.11), transparent 30rem),
+      #09090f;
+  }
+
+  .glass-card {
+    background: rgba(20, 20, 33, 0.72);
+    border: 1px solid rgba(167, 139, 250, 0.17);
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px);
+  }
+
+  .gradient-border { position: relative; isolation: isolate; }
+  .gradient-border::before {
+    background: linear-gradient(130deg, rgba(96, 165, 250, 0.7), rgba(168, 85, 247, 0.38), rgba(96, 165, 250, 0.08));
+    border-radius: inherit;
+    content: "";
+    inset: -1px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .section-kicker {
+    color: #a78bfa;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    color: #f8fafc;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 1.08;
+  }
+
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+}
+
+/* Class-based light theme keeps the preference under the visitor's control. */
+html.light body { background: #f7f7ff; color: #111827; }
+html.light .site-shell {
+  background:
+    radial-gradient(circle at 8% 9%, rgba(99, 102, 241, 0.12), transparent 24rem),
+    radial-gradient(circle at 90% 20%, rgba(147, 51, 234, 0.08), transparent 30rem),
+    #f7f7ff;
+}
+html.light .glass-card, html.light .nav-surface, html.light .code-window {
+  background: rgba(255, 255, 255, 0.82) !important;
+  border-color: rgba(99, 102, 241, 0.17) !important;
+  color: #111827;
+}
+html.light .text-slate-100, html.light .text-white { color: #111827 !important; }
+html.light .section-title { color: #111827; }
+html.light .text-slate-200 { color: #1f2937 !important; }
+html.light .text-slate-300, html.light .text-slate-400 { color: #4b5563 !important; }
+html.light .border-white\/10, html.light .border-white\/5, html.light .border-slate-800 { border-color: rgba(99, 102, 241, 0.15) !important; }
+html.light .bg-\[\#09090f\], html.light .bg-\[\#0d0d17\], html.light .bg-\[\#10101c\] { background-color: #f7f7ff !important; }
+html.light .bg-slate-950\/70, html.light .bg-slate-950\/80 { background-color: rgba(247, 247, 255, 0.86) !important; }
+html.light .shadow-black\/20 { --tw-shadow-color: rgba(79, 70, 229, 0.1) !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
