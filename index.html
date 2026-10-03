@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manoranjan Behera — B.Sc. Computer Science graduate, aspiring full-stack developer, and software engineer based in Odisha, India.">
+  <meta name="keywords" content="Manoranjan Behera, software engineer, web developer, portfolio, computer science">
+  <meta name="author" content="Manoranjan Behera">
+  <meta name="theme-color" content="#09090f">
+  <meta property="og:title" content="Manoranjan Behera | Aspiring Software Engineer">
+  <meta property="og:description" content="Portfolio of Manoranjan Behera, a B.Sc. Computer Science graduate.">
+  <meta property="og:type" content="website">
+  <title>Manoranjan Behera | Aspiring Software Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236366f1'/%3E%3Cpath d='M28 72V28h12l10 19 10-19h12v44H60V49L50 68 40 49v23H28Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+  <div class="site-shell min-h-screen">
+    <header class="fixed inset-x-0 top-0 z-50 px-4 pt-3 sm:px-6">
+      <nav class="nav-surface mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 shadow-xl shadow-black/20 backdrop-blur-xl sm:px-5" aria-label="Primary navigation">
+        <a href="#home" class="group flex items-center gap-2 text-base font-extrabold tracking-tight text-white" aria-label="Manoranjan home">
+          <span class="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-blue-400 to-violet-600 text-sm text-white shadow-lg shadow-violet-900/30 transition-transform duration-300 group-hover:rotate-6">M</span>
+          Manoranjan Behera<span class="text-violet-400">.</span>
+        </a>
+
+        <div class="hidden items-center gap-6 lg:flex">
+          <a class="nav-link text-sm font-medium text-slate-300 transition hover:text-white" href="#home">Home</a>
+          <a class="nav-link text-sm font-medium text-slate-300 transition hover:text-white" href="#about">About</a>
+          <a class="nav-link text-sm font-medium text-slate-300 transition hover:text-white" href="#skills">Skills</a>
+          <a class="nav-link text-sm font-medium text-slate-300 transition hover:text-white" href="#projects">Projects</a>
+          <a class="nav-link text-sm font-medium text-slate-300 transition hover:text-white" href="#education">Education</a>
+          <a class="nav-link text-sm font-medium text-slate-300 transition hover:text-white" href="#contact">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button id="theme-toggle" type="button" class="grid h-9 w-9 place-items-center rounded-xl border border-white/10 text-slate-200 transition hover:border-violet-400/50 hover:bg-white/5 hover:text-white" aria-label="Switch to light theme" title="Switch theme">
+            <svg id="theme-icon" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2m-3.64-6.36-1.41 1.41M6.05 17.95l1.41-1.41m0-10.61-1.41-1.41m11.9 13.56-1.41-1.41"/><circle cx="12" cy="12" r="4"/></svg>
+          </button>
+          <button id="menu-toggle" type="button" class="grid h-9 w-9 place-items-center rounded-xl border border-white/10 text-slate-200 transition hover:border-violet-400/50 hover:bg-white/5 lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobile-menu" class="nav-surface mx-auto mt-2 hidden max-w-6xl rounded-2xl border border-white/10 bg-slate-950/95 p-3 shadow-xl shadow-black/20 backdrop-blur-xl lg:hidden">
+        <div class="grid grid-cols-2 gap-1">
+          <a class="mobile-link rounded-xl px-3 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-violet-500/10 hover:text-violet-300" href="#home">Home</a>
+          <a class="mobile-link rounded-xl px-3 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-violet-500/10 hover:text-violet-300" href="#about">About</a>
+          <a class="mobile-link rounded-xl px-3 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-violet-500/10 hover:text-violet-300" href="#skills">Skills</a>
+          <a class="mobile-link rounded-xl px-3 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-violet-500/10 hover:text-violet-300" href="#projects">Projects</a>
+          <a class="mobile-link rounded-xl px-3 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-violet-500/10 hover:text-violet-300" href="#education">Education</a>
+          <a class="mobile-link rounded-xl px-3 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-violet-500/10 hover:text-violet-300" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="relative flex min-h-screen items-center overflow-hidden px-5 pb-16 pt-30 sm:px-8 lg:px-10" aria-labelledby="hero-heading">
+        <div class="pointer-events-none absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/10 blur-3xl"></div>
+        <div class="relative mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-[1.03fr_.97fr]">
+          <div>
+            <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-400/10 px-3 py-1.5 text-xs font-semibold text-violet-200">
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_12px_#34d399]"></span>
+              Open to opportunities
+            </div>
+            <p class="mb-4 font-mono text-sm font-medium text-blue-300">// building useful full-stack experiences</p>
+            <h1 id="hero-heading" class="max-w-3xl text-4xl font-extrabold tracking-[-0.055em] text-white sm:text-5xl lg:text-6xl">Hi, I’m <span class="bg-gradient-to-r from-blue-300 via-violet-300 to-fuchsia-300 bg-clip-text text-transparent">Manoranjan Behera</span></h1>
+            <p class="mt-6 max-w-2xl text-lg font-semibold leading-relaxed text-slate-200">B.Sc Computer Science Graduate &amp; Aspiring Full-Stack Developer</p>
+            <p class="mt-4 max-w-xl text-base leading-7 text-slate-400">I build practical web experiences with JavaScript and Java, and enjoy turning real-world problems into clean, reliable software—one thoughtful line of code at a time.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#projects" class="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-violet-950/40 transition duration-300 hover:-translate-y-0.5 hover:shadow-violet-700/35">View Projects <span class="transition-transform group-hover:translate-x-1">→</span></a>
+              <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-bold text-slate-100 transition duration-300 hover:-translate-y-0.5 hover:border-violet-300/50 hover:bg-violet-400/10">Contact Me <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="mt-10 flex items-center gap-6 text-sm text-slate-400">
+              <span class="flex items-center gap-2"><span class="font-mono text-violet-300">01.</span> Problem solver</span>
+              <span class="flex items-center gap-2"><span class="font-mono text-violet-300">02.</span> Web learner</span>
+            </div>
+          </div>
+
+          <div class="relative mx-auto w-full max-w-lg lg:max-w-none">
+            <div class="absolute -right-4 -top-5 h-28 w-28 rounded-full bg-blue-500/20 blur-2xl"></div>
+            <div class="code-window gradient-border relative overflow-hidden rounded-3xl border border-violet-300/20 bg-[#10101c] p-1 shadow-2xl shadow-violet-950/40">
+              <div class="rounded-[1.35rem] bg-[#0d0d17] p-5 sm:p-6">
+                <div class="mb-6 flex items-center justify-between border-b border-white/10 pb-4">
+                  <div class="flex gap-1.5"><span class="h-3 w-3 rounded-full bg-rose-400"></span><span class="h-3 w-3 rounded-full bg-amber-300"></span><span class="h-3 w-3 rounded-full bg-emerald-400"></span></div>
+                  <span class="font-mono text-[11px] text-slate-500">portfolio.js</span>
+                  <span class="w-12"></span>
+                </div>
+                <div class="grid gap-6 sm:grid-cols-[1fr_auto]">
+                  <pre class="overflow-x-auto font-mono text-xs leading-6 text-slate-300 sm:text-sm"><code><span class="text-violet-300">const</span> developer = {
+  name: <span class="text-emerald-300">'Manoranjan'</span>,
+  role: <span class="text-emerald-300">'Engineer'</span>,
+  mindset: <span class="text-emerald-300">'Always learning'</span>,
+  <span class="text-blue-300">create</span>() {
+    <span class="text-violet-300">return</span> <span class="text-emerald-300">'impact'</span>;
+  }
+};</code></pre>
+                  <div class="self-end">
+                    <img src="assets/manoranjan-behera.jpg" alt="Portrait of Manoranjan Behera" class="h-20 w-20 rounded-2xl border border-violet-300/40 object-cover object-top shadow-lg shadow-violet-950/30" width="80" height="80">
+                  </div>
+                </div>
+                <div class="mt-7 flex items-center gap-3 rounded-xl border border-white/5 bg-white/5 p-3">
+                  <div class="grid h-8 w-8 place-items-center rounded-lg bg-emerald-400/15 text-emerald-300">✓</div>
+                  <div><p class="text-xs font-semibold text-slate-200">Ready to build</p><p class="mt-0.5 text-[11px] text-slate-500">Curious mind. Clean code.</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -bottom-5 -left-4 hidden rounded-2xl border border-blue-300/20 bg-slate-950/80 px-4 py-3 shadow-xl shadow-black/20 backdrop-blur-md sm:block">
+              <p class="font-mono text-[10px] uppercase tracking-wider text-slate-500">Current focus</p><p class="mt-1 text-sm font-bold text-blue-200">DSA + Web Development</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="scroll-mt-28 px-5 py-22 sm:px-8 lg:px-10" aria-labelledby="about-heading">
+        <div class="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[.9fr_1.1fr]">
+          <div class="reveal">
+            <p class="section-kicker">01 / About me</p>
+            <h2 id="about-heading" class="section-title mt-3">A curious developer with a practical mindset.</h2>
+            <p class="mt-6 leading-7 text-slate-400">I’m Manoranjan, a Computer Science graduate from Odisha with hands-on experience in full-stack web development using the MERN ecosystem and Java. I’m interested in creating web experiences that are useful, responsive, and easy to use.</p>
+            <p class="mt-4 leading-7 text-slate-400">My learning journey is rooted in programming fundamentals, REST APIs, object-oriented programming, and Data Structures and Algorithms. I’m looking forward to growing with a team that values learning and craftsmanship.</p>
+            <a href="#contact" class="mt-7 inline-flex items-center gap-2 text-sm font-bold text-violet-300 transition hover:text-violet-200">Let’s connect <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="reveal grid grid-cols-2 gap-3 sm:gap-4">
+            <article class="glass-card rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-violet-400/40"><span class="font-mono text-sm text-blue-300">01</span><h3 class="mt-7 text-lg font-bold text-white">B.Sc CS</h3><p class="mt-2 text-sm leading-6 text-slate-400">Graduate with a foundation in computing.</p></article>
+            <article class="glass-card rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-violet-400/40"><span class="font-mono text-sm text-violet-300">02</span><h3 class="mt-7 text-lg font-bold text-white">2 Projects</h3><p class="mt-2 text-sm leading-6 text-slate-400">Built to turn learning into practice.</p></article>
+            <article class="glass-card rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-violet-400/40"><span class="font-mono text-sm text-fuchsia-300">03</span><h3 class="mt-7 text-lg font-bold text-white">10+ Skills</h3><p class="mt-2 text-sm leading-6 text-slate-400">Across languages, web, and tools.</p></article>
+            <article class="glass-card rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-violet-400/40"><span class="font-mono text-sm text-emerald-300">04</span><h3 class="mt-7 text-lg font-bold text-white">DSA Focus</h3><p class="mt-2 text-sm leading-6 text-slate-400">Growing through consistent practice.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="scroll-mt-28 border-y border-white/5 bg-[#0d0d17]/70 px-5 py-22 sm:px-8 lg:px-10" aria-labelledby="skills-heading">
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal max-w-2xl"><p class="section-kicker">02 / Toolkit</p><h2 id="skills-heading" class="section-title mt-3">Technologies I use to build.</h2><p class="mt-4 leading-7 text-slate-400">A growing toolkit for solving programming problems and building clean, responsive web interfaces.</p></div>
+          <div class="reveal mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-blue-400/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-blue-400/10 font-mono font-bold text-blue-300">C</div><h3 class="mt-5 font-bold text-white">C</h3><p class="mt-2 text-sm leading-6 text-slate-400">Core programming and problem-solving fundamentals.</p></article>
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-violet-400/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-violet-400/10 font-mono font-bold text-violet-300">C++</div><h3 class="mt-5 font-bold text-white">C++</h3><p class="mt-2 text-sm leading-6 text-slate-400">Efficient logic, algorithms, and data structures.</p></article>
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-orange-400/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-orange-400/10 font-mono font-bold text-orange-300">J</div><h3 class="mt-5 font-bold text-white">Java</h3><p class="mt-2 text-sm leading-6 text-slate-400">Object-oriented programming and robust applications.</p></article>
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-amber-300/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-amber-300/10 font-mono font-bold text-amber-200">JS</div><h3 class="mt-5 font-bold text-white">JavaScript</h3><p class="mt-2 text-sm leading-6 text-slate-400">Interactive interfaces and browser functionality.</p></article>
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-orange-400/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-orange-500/10 font-mono font-bold text-orange-300">&lt;/&gt;</div><h3 class="mt-5 font-bold text-white">HTML</h3><p class="mt-2 text-sm leading-6 text-slate-400">Semantic, accessible structure for the web.</p></article>
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-sky-400/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-sky-400/10 font-mono font-bold text-sky-300">#</div><h3 class="mt-5 font-bold text-white">CSS</h3><p class="mt-2 text-sm leading-6 text-slate-400">Responsive layouts and polished visual details.</p></article>
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-cyan-400/10 font-mono font-bold text-cyan-300">SQL</div><h3 class="mt-5 font-bold text-white">SQL</h3><p class="mt-2 text-sm leading-6 text-slate-400">Working with structured data and queries.</p></article>
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-blue-400/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-blue-500/10 font-mono font-bold text-blue-300">DB</div><h3 class="mt-5 font-bold text-white">MySQL</h3><p class="mt-2 text-sm leading-6 text-slate-400">Relational database design and management.</p></article>
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-emerald-400/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-emerald-400/10 font-mono text-sm font-bold text-emerald-300">MERN</div><h3 class="mt-5 font-bold text-white">MERN Stack</h3><p class="mt-2 text-sm leading-6 text-slate-400">Full-stack apps with MongoDB, Express, React, and Node.js.</p></article>
+            <article class="glass-card group rounded-2xl p-5 transition duration-300 hover:-translate-y-1 hover:border-rose-400/45"><div class="grid h-11 w-11 place-items-center rounded-xl bg-rose-400/10 text-rose-300"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M6 8v7a3 3 0 0 0 3 3h7M18 16V8a3 3 0 0 0-3-3H8"/></svg></div><h3 class="mt-5 font-bold text-white">Git / GitHub</h3><p class="mt-2 text-sm leading-6 text-slate-400">Version control and collaborative workflows.</p></article>
+          </div>
+          <p class="reveal mt-6 text-center text-sm text-slate-500">Also comfortable with <span class="font-medium text-slate-300">REST APIs, OOP, Postman, Netlify, Vercel, and VS Code</span> in my everyday development workflow.</p>
+        </div>
+      </section>
+
+      <section id="projects" class="scroll-mt-28 px-5 py-22 sm:px-8 lg:px-10" aria-labelledby="projects-heading">
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div class="max-w-2xl"><p class="section-kicker">03 / Selected work</p><h2 id="projects-heading" class="section-title mt-3">Projects made to learn by doing.</h2><p class="mt-4 leading-7 text-slate-400">A selection of practical projects that showcase my interest in user-focused software.</p></div><p class="font-mono text-sm text-slate-500">02 PROJECTS</p></div>
+          <div class="mt-10 grid gap-5 lg:grid-cols-2">
+            <article class="glass-card reveal group flex flex-col rounded-3xl p-6 transition duration-300 hover:-translate-y-1.5 hover:border-violet-400/40">
+              <div class="flex items-start justify-between"><span class="font-mono text-xs font-bold tracking-widest text-violet-300">01 / API APP</span><svg class="h-5 w-5 text-slate-500 transition group-hover:text-violet-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h6v6M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></div>
+              <h3 class="mt-9 text-xl font-bold text-white">Weather Application</h3><p class="mt-3 text-sm leading-6 text-slate-400">A simple, responsive weather tool that lets users search a city and view current conditions through a weather API.</p>
+              <div class="mt-6 flex flex-wrap gap-2"><span class="rounded-md bg-blue-400/10 px-2 py-1 font-mono text-[11px] text-blue-200">HTML</span><span class="rounded-md bg-violet-400/10 px-2 py-1 font-mono text-[11px] text-violet-200">CSS</span><span class="rounded-md bg-amber-400/10 px-2 py-1 font-mono text-[11px] text-amber-200">JavaScript</span><span class="rounded-md bg-sky-400/10 px-2 py-1 font-mono text-[11px] text-sky-200">Weather API</span></div>
+              <div class="mt-auto flex gap-4 border-t border-white/10 pt-5"><a class="text-sm font-bold text-slate-200 transition hover:text-violet-300" href="https://brilliant-caramel-cdf292.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a class="text-sm font-bold text-slate-200 transition hover:text-violet-300" href="https://github.com/jantyking74-gif/weather-app" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            </article>
+            <article class="glass-card reveal group flex flex-col rounded-3xl p-6 transition duration-300 hover:-translate-y-1.5 hover:border-fuchsia-400/40">
+              <div class="flex items-start justify-between"><span class="font-mono text-xs font-bold tracking-widest text-fuchsia-300">02 / PORTFOLIO</span><svg class="h-5 w-5 text-slate-500 transition group-hover:text-fuchsia-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h6v6M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></div>
+              <h3 class="mt-9 text-xl font-bold text-white">Developer Portfolio</h3><p class="mt-3 text-sm leading-6 text-slate-400">A modern, responsive portfolio built to showcase my skills, background, and selected work through a polished developer-focused interface.</p>
+              <div class="mt-6 flex flex-wrap gap-2"><span class="rounded-md bg-orange-400/10 px-2 py-1 font-mono text-[11px] text-orange-200">HTML</span><span class="rounded-md bg-cyan-400/10 px-2 py-1 font-mono text-[11px] text-cyan-200">Tailwind CSS</span><span class="rounded-md bg-amber-400/10 px-2 py-1 font-mono text-[11px] text-amber-200">JavaScript</span><span class="rounded-md bg-fuchsia-400/10 px-2 py-1 font-mono text-[11px] text-fuchsia-200">Responsive</span></div>
+              <div class="mt-auto flex gap-4 border-t border-white/10 pt-5"><a class="text-sm font-bold text-slate-200 transition hover:text-fuchsia-300" href="https://jantyking74-gif.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a class="text-sm font-bold text-slate-200 transition hover:text-fuchsia-300" href="https://github.com/jantyking74-gif/portfolio" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="scroll-mt-28 border-y border-white/5 bg-[#0d0d17]/70 px-5 py-22 sm:px-8 lg:px-10" aria-labelledby="education-heading">
+        <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[.82fr_1.18fr]">
+          <div class="reveal"><p class="section-kicker">04 / Education</p><h2 id="education-heading" class="section-title mt-3">The foundation behind the journey.</h2><p class="mt-5 max-w-md leading-7 text-slate-400">Each chapter strengthened my interest in computer science, continual learning, and creating technology with purpose.</p></div>
+          <ol class="reveal relative ml-3 border-l border-violet-400/25 pl-8">
+            <li class="relative pb-10"><span class="absolute -left-[2.55rem] top-1 grid h-5 w-5 place-items-center rounded-full border-4 border-[#0d0d17] bg-blue-400"></span><p class="font-mono text-xs font-bold tracking-wider text-blue-300">2023 - 2026 / GRADUATION</p><h3 class="mt-2 text-lg font-bold text-white">B.Sc Computer Science</h3><p class="mt-1 text-sm text-slate-300">Fakir Mohan Autonomous College, Balasore</p><p class="mt-3 inline-flex rounded-lg bg-violet-400/10 px-2.5 py-1 text-sm font-semibold text-violet-200">CGPA: 7.71</p></li>
+            <li class="relative pb-10"><span class="absolute -left-[2.55rem] top-1 grid h-5 w-5 place-items-center rounded-full border-4 border-[#0d0d17] bg-violet-400"></span><p class="font-mono text-xs font-bold tracking-wider text-violet-300">2021 - 2023 / HIGHER SECONDARY</p><h3 class="mt-2 text-lg font-bold text-white">Plus 2 Science</h3><p class="mt-1 text-sm text-slate-300">Simulia Higher Secondary School, Markona, Balasore</p><p class="mt-3 inline-flex rounded-lg bg-violet-400/10 px-2.5 py-1 text-sm font-semibold text-violet-200">Percentage: 77.83%</p></li>
+            <li class="relative"><span class="absolute -left-[2.55rem] top-1 grid h-5 w-5 place-items-center rounded-full border-4 border-[#0d0d17] bg-fuchsia-400"></span><p class="font-mono text-xs font-bold tracking-wider text-fuchsia-300">2020 - 2021 / SCHOOL</p><h3 class="mt-2 text-lg font-bold text-white">Matriculation</h3><p class="mt-1 text-sm text-slate-300">N.P. High School, Bideipur</p><p class="mt-3 inline-flex rounded-lg bg-violet-400/10 px-2.5 py-1 text-sm font-semibold text-violet-200">Percentage: 61.16%</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="coding" class="scroll-mt-28 px-5 py-22 sm:px-8 lg:px-10" aria-labelledby="coding-heading">
+        <div class="mx-auto max-w-6xl rounded-3xl border border-violet-400/15 bg-gradient-to-br from-violet-500/10 via-transparent to-blue-500/10 p-6 sm:p-10">
+          <div class="reveal flex flex-col justify-between gap-8 lg:flex-row lg:items-end"><div class="max-w-2xl"><p class="section-kicker">05 / Problem solving</p><h2 id="coding-heading" class="section-title mt-3">Learning DSA, one pattern at a time.</h2><p class="mt-4 leading-7 text-slate-400">I enjoy breaking problems into smaller parts, choosing the right approach, and improving through regular coding practice.</p></div><a href="https://github.com/jantyking74-gif" target="_blank" rel="noopener noreferrer" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl border border-violet-300/30 bg-violet-400/10 px-5 py-3 text-sm font-bold text-violet-100 transition hover:-translate-y-0.5 hover:border-violet-300/70 hover:bg-violet-400/20">View Coding Profile <span aria-hidden="true">↗</span></a></div>
+          <div class="reveal mt-9 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4"><div class="glass-card rounded-xl px-4 py-4 text-sm font-semibold text-slate-200">01 <span class="ml-2 text-slate-400">Arrays</span></div><div class="glass-card rounded-xl px-4 py-4 text-sm font-semibold text-slate-200">02 <span class="ml-2 text-slate-400">Binary Search</span></div><div class="glass-card rounded-xl px-4 py-4 text-sm font-semibold text-slate-200">03 <span class="ml-2 text-slate-400">Sorting</span></div><div class="glass-card rounded-xl px-4 py-4 text-sm font-semibold text-slate-200">04 <span class="ml-2 text-slate-400">Linked List</span></div><div class="glass-card rounded-xl px-4 py-4 text-sm font-semibold text-slate-200">05 <span class="ml-2 text-slate-400">Stack &amp; Queue</span></div><div class="glass-card rounded-xl px-4 py-4 text-sm font-semibold text-slate-200">06 <span class="ml-2 text-slate-400">Trees</span></div><div class="glass-card rounded-xl px-4 py-4 text-sm font-semibold text-slate-200">07 <span class="ml-2 text-slate-400">Recursion</span></div></div>
+        </div>
+      </section>
+
+      <section id="contact" class="scroll-mt-28 px-5 pb-22 pt-8 sm:px-8 lg:px-10" aria-labelledby="contact-heading">
+        <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[.78fr_1.22fr]">
+          <div class="reveal"><p class="section-kicker">06 / Contact</p><h2 id="contact-heading" class="section-title mt-3">Let’s start a conversation.</h2><p class="mt-5 max-w-md leading-7 text-slate-400">Have an opportunity, a question, or an idea? I’d be happy to hear from you.</p>
+            <div class="mt-8 space-y-4">
+              <a class="group flex items-center gap-3 text-sm text-slate-300 transition hover:text-violet-200" href="mailto:mb9827256@gmail.com"><span class="grid h-9 w-9 place-items-center rounded-lg bg-violet-400/10 text-violet-300">✉</span><span><span class="block text-xs text-slate-500">Email</span>mb9827256@gmail.com</span></a>
+              <a class="group flex items-center gap-3 text-sm text-slate-300 transition hover:text-violet-200" href="tel:+919692217284"><span class="grid h-9 w-9 place-items-center rounded-lg bg-violet-400/10 text-violet-300">☎</span><span><span class="block text-xs text-slate-500">Phone</span>+91&nbsp;96922&nbsp;17284</span></a>
+              <a class="group flex items-center gap-3 text-sm text-slate-300 transition hover:text-violet-200" href="https://github.com/jantyking74-gif" target="_blank" rel="noopener noreferrer"><span class="grid h-9 w-9 place-items-center rounded-lg bg-violet-400/10 text-violet-300">⌘</span><span><span class="block text-xs text-slate-500">GitHub</span>github.com/jantyking74-gif</span></a>
+              <a class="group flex items-center gap-3 text-sm text-slate-300 transition hover:text-violet-200" href="https://www.linkedin.com/in/manoranjan-behera-a25a87360" target="_blank" rel="noopener noreferrer"><span class="grid h-9 w-9 place-items-center rounded-lg bg-violet-400/10 text-violet-300">in</span><span><span class="block text-xs text-slate-500">LinkedIn</span>linkedin.com/in/manoranjan-behera-a25a87360</span></a>
+              <div class="flex items-center gap-3 text-sm text-slate-300"><span class="grid h-9 w-9 place-items-center rounded-lg bg-violet-400/10 text-violet-300">⌖</span><span><span class="block text-xs text-slate-500">Location</span>Bhadrak, Odisha, India</span></div>
+            </div>
+          </div>
+          <form id="contact-form" class="glass-card reveal rounded-3xl p-6 sm:p-8" aria-label="Contact form">
+            <div class="grid gap-5 sm:grid-cols-2"><div><label for="name" class="mb-2 block text-sm font-semibold text-slate-200">Name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-600 transition focus:border-violet-400/60 focus:bg-white/10 focus:outline-none"></div><div><label for="email" class="mb-2 block text-sm font-semibold text-slate-200">Email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-600 transition focus:border-violet-400/60 focus:bg-white/10 focus:outline-none"></div></div>
+            <div class="mt-5"><label for="subject" class="mb-2 block text-sm font-semibold text-slate-200">Subject</label><input id="subject" name="subject" type="text" required placeholder="How can I help?" class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-600 transition focus:border-violet-400/60 focus:bg-white/10 focus:outline-none"></div>
+            <div class="mt-5"><label for="message" class="mb-2 block text-sm font-semibold text-slate-200">Message</label><textarea id="message" name="message" rows="5" required placeholder="Write your message here..." class="w-full resize-y rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-600 transition focus:border-violet-400/60 focus:bg-white/10 focus:outline-none"></textarea></div>
+            <div class="mt-6 flex flex-wrap items-center gap-4"><button type="submit" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-violet-950/30 transition hover:-translate-y-0.5 hover:shadow-violet-700/30">Send Message <span aria-hidden="true">→</span></button><p id="form-status" class="text-sm text-emerald-300" role="status" aria-live="polite"></p></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 px-5 py-8 sm:px-8 lg:px-10">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
+        <div><p class="font-bold text-white">Manoranjan Behera<span class="text-violet-400">.</span></p><p class="mt-1 text-sm text-slate-500">Aspiring Software Engineer</p></div>
+        <div class="flex items-center gap-3"><a class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-violet-400/50 hover:text-violet-200" href="https://github.com/jantyking74-gif" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.54 1.06 1.54 1.06.9 1.58 2.35 1.12 2.92.86.09-.67.35-1.12.64-1.38-2.22-.26-4.55-1.15-4.55-5.09 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.56 5.08.36.32.68.93.68 1.87 0 1.35-.01 2.43-.01 2.76 0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" clip-rule="evenodd"/></svg></a><a class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-sm font-bold text-slate-400 transition hover:border-violet-400/50 hover:text-violet-200" href="https://www.linkedin.com/in/manoranjan-behera-a25a87360" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a><a class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-violet-400/50 hover:text-violet-200" href="mailto:mb9827256@gmail.com" aria-label="Email">✉</a></div>
+        <p class="text-sm text-slate-500">© 2026 Manoranjan Behera. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const root = document.documentElement;
+
+    function setTheme(theme) {
+      const isLight = theme === 'light';
+      root.classList.toggle('light', isLight);
+      localStorage.setItem('portfolio-theme', theme);
+      themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+      themeIcon.innerHTML = isLight
+        ? '<path d="M20.4 15.6A8.5 8.5 0 0 1 8.4 3.6 8.5 8.5 0 1 0 20.4 15.6Z"/>'
+        : '<path d="M12 3v2m0 14v2M3 12h2m14 0h2m-3.64-6.36-1.41 1.41M6.05 17.95l1.41-1.41m0-10.61-1.41-1.41m11.9 13.56-1.41-1.41"/><circle cx="12" cy="12" r="4"/>';
+    }
+
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    setTheme(savedTheme || 'dark');
+
+    themeToggle.addEventListener('click', () => setTheme(root.classList.contains('light') ? 'dark' : 'light'));
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+    });
+
+    mobileLinks.forEach((link) => link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation menu');
+    }));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+    document.getElementById('contact-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      document.getElementById('form-status').textContent = 'Thanks! Your message is ready to send.';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
